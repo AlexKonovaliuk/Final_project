@@ -1,0 +1,132 @@
+@media only screen and (max-device-width : 1220px) {
+    .header__logo{
+        height: 330px;
+    }
+    .header__booking{
+        font-size: 16px;
+        right: 20px;
+    }
+    .header__lang{
+        right: 210px;
+    }
+    .contact__box{
+        margin-bottom: 20px;
+    }
+    .contact__map{
+        float: left;
+        margin-left: 270px;
+    }
+}
+@media only screen and (max-device-width : 1080px) {
+    .header__logo{
+        height: 300px;
+    }
+    .list__link{
+        font-size: 20px;
+    }
+    .booking__link{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-device-width : 220px) and (max-device-width : 900px) {
+    .nav__list{
+        position: absolute;
+        float: left;
+        display: none;
+        text-align: left;
+        top: 70px;
+        left: 0;
+        transform: translate(0,0);
+        background: #c16868;
+        background: linear-gradient(180deg, #c16868 0%, #473C45 100%); /* w3c */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c16868', endColorstr='#473C45',GradientType=0 ); /* ie6-9 */
+    }
+    .nav__mob {
+        width: 95%;
+        margin: 0 auto;
+        color: #fff;
+        height: 30px;
+        line-height: 70px;
+        cursor: pointer;
+        display: block;
+        font-size: 45px;
+    }
+    .nav__mob span{
+        margin-left: 10px;
+        font-size: 45px;
+    }
+    .list__item{
+        display: block;
+        transition: all .4s linear;
+        padding: 0;
+    }
+    .list__item:hover{
+        border-radius: 0;
+    }
+    .list__link{
+        border: 0;
+        font-size: 40px;
+    }
+    .list__link:hover{
+        color: #c16868;
+    }
+    .nav__sublist {
+        position: absolute;
+        left: 247px;
+        top: 0;
+        width: 300px;
+        border-radius: 0;
+    }
+    .list__sublink{
+        font-size: 35px;
+    }
+    .fa-caret-down{
+        transform: rotate(270deg);
+    }
+    .menu__ukrainian-cuisine,
+    .menu__georgian-cuisine{
+        float: none;
+        width: 100%;
+    }
+    .next, .prev{
+        font-size: 50px;
+    }
+    .next:hover, .prev:hover{
+        color: #fff;
+    }
+    .contact__box{
+        float: none;
+        text-align: center;
+    }
+    .contact__map{
+        text-align: center;
+        float: none;
+        margin-left: 85px;
+    }
+}
+
+@media only screen and (min-device-width : 220px) and (max-device-width : 480px) {
+    .slider{
+        height: 600px;
+    }
+    .arrow__up{
+        font-size: 200px;
+        top: 80%;
+    }
+    .slider .slider__nav span{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .header__booking{
+        top: 18px;
+    }
+    .booking__link{
+        font-size: 30px;
+    }
+    .header__lang{
+        right: 335px;
+    }
+}

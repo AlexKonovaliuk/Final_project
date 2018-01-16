@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BORSHCHAPURI</title>
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <!-- start header -->
+    <header class="header">
+        <p class="arrow"><a href="#header__logo"><i class="fa fa-arrow-circle-up fa-5x arrow__up"  aria-hidden="true"></i></a></p>
+        <div class="header__logo" id="header__logo">
+            <div class="header__lang">
+                <ul class="lang__select">
+                    <li class="active" data-lang="en"><a href="indexEn.html">Eng</a></li>
+                    <li data-lang="ua"><a href="index.html">Ru</a></li>
+                </ul>
+            </div>
+            <div class="header__booking">
+                <a href="#" class="booking__link">
+                    Reserve
+                </a>
+            </div>
+            <div class="header__modal">
+                <span class="modal__close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+                <div class="reserve__table">
+                    <div class="reserve__title">Reserve a table</div>
+                    <form action="" method="post" class="reserve__form">
+                        <div class="left__reserve">
+                            <div class="selected__table">
+                                Table № <input class="selected__table-input" type="text" placeholder="Choose a table" required>
+                                <input class="selected__table-input2" type="text" readonly>
+                            </div>
+                            <div class="tables">
+                                <label for="table1" class="label__table">
+                                    <input type="radio" name="table" value="1" id="table1" class="table__input">
+                                    <span class="table__img">Table №1</span>
+                                </label>
+                                <label for="table2" class="label__table">
+                                    <input type="radio" name="table" value="2" id="table2" class="table__input">
+                                    <span class="table__img">Table №2</span>
+                                </label>
+                                <label for="table3" class="label__table">
+                                    <input type="radio" name="table" value="3" id="table3" class="table__input">
+                                    <span class="table__img">Table №3</span>
+                                </label>
+                                <label for="table4" class="label__table">
+                                    <input type="radio" name="table" value="4" id="table4" class="table__input">
+                                    <span class="table__img">Table №4</span>
+                                </label>
+                                <label for="table5" class="label__table">
+                                    <input type="radio" name="table" value="5" id="table5" class="table__input">
+                                    <span class="table__img">Table №5</span>
+                                </label>
+                                <label for="table6" class="label__table">
+                                    <input type="radio" name="table" value="6" id="table6" class="table__input">
+                                    <span class="table__img">Table №6</span>
+                                </label>
+                                <label for="table7" class="label__table">
+                                    <input type="radio" name="table" value="7" id="table7" class="table__input">
+                                    <span class="table__img">Table №7</span>
+                                </label>
+                                <label for="table8" class="label__table">
+                                    <input type="radio" name="table" value="8" id="table8" class="table__input">
+                                    <span class="table__img">Table №8</span>
+                                </label>
+                                <label for="table9" class="label__table">
+                                    <input type="radio" name="table" value="9" id="table9" class="table__input">
+                                    <span class="table__img">Table №9</span>
+                                </label>
+                                <label for="table10" class="label__table">
+                                    <input type="radio" name="table" value="10" id="table10" class="table__input">
+                                    <span class="table__img">Table №10</span>
+                                </label>
+                                <label for="table11" class="label__table">
+                                    <input type="radio" name="table" value="11" id="table11" class="table__input">
+                                    <span class="table__img">Table №11</span>
+                                </label>
+                                <label for="table12" class="label__table">
+                                    <input type="radio" name="table" value="12" id="table12" class="table__input">
+                                    <span class="table__img">Table №12</span>
+                                </label>
+                                <label for="table13" class="label__table">
+                                    <input type="radio" name="table" value="13" id="table13" class="table__input">
+                                    <span class="table__img">Table №13</span>
+                                </label>
+                                <label for="table14" class="label__table">
+                                    <input type="radio" name="table" value="14" id="table14" class="table__input">
+                                    <span class="table__img">Table №14</span>
+                                </label>
+                                <label for="table15" class="label__table">
+                                    <input type="radio" name="table" value="15" id="table15" class="table__input">
+                                    <span class="table__img">Table №15</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="right__reserve">
+                            <div class="calendar__time__people">
+                                <ul>
+                                    <li><input class="date__reserve" type="date" required></li>
+                                    <li><input class="time__reserve" type="time" required></li>
+                                    <li><select name="" class="people__reserve" id="">
+                                        <option value="1 per.">1 per.</option>
+                                        <option value="2 per.">2 per.</option>
+                                        <option value="3 per.">3 per.</option>
+                                        <option value="4 per.">4 per.</option>
+                                        <option value="5 per.">5 per.</option>
+                                        <option value="6 per.">6 per.</option>
+                                        <option value="7 per.">7 per.</option>
+                                        <option value="8 per.">8 per.</option>
+                                        <option value="9 per.">9 per.</option>
+                                        <option value="10 per.">10 per.</option>
+                                        <option value="> 10 per.">&gt; 10 per.</option>
+                                    </select></li>
+                                </ul>
+                            </div>
+                            <div class="contact__form">
+                                <input type="text" class="contact__input reserve__name" required placeholder="Name *">
+                                <input type="tel" class="contact__input reserve__phone" required pattern="\+? ?3?[ -]?8?[ -]?\(?(\d[ -]?){3}\)?[ -]?(\d[ -]?){7}" placeholder="+38 ххх ххх хх хх *" title="Enter the number in the format +38 ххх ххх хх хх">
+                                <input type="text" class="contact__input reserve__wishes" placeholder="Wish for the reservation">
+                                <input type="submit" value="Reserve a table" class="contact__input reserve__btn">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal__overlay"></div>
+        </div>
+        <div class="header__nav" id="header__nav">
+            <ul class="nav__list">
+                <li class="list__item"><a class="list__link hidden" href="#about">About</a></li><li class="list__item"><a class="list__link" href="#menu">Menu <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="nav__sublist">
+                        <li class="list__subitem"><a class="list__sublink" href="#menu">Ukrainian cuisine</a></li>
+                        <li class="list__subitem"><a class="list__sublink" href="#menu">Georgian cuisine</a></li>
+                    </ul>
+                </li><li class="list__item"><a class="list__link" href="#events">Events <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="nav__sublist">
+                        <li class="list__subitem"><a class="list__sublink" href="#e1">B-Day</a></li>
+                        <li class="list__subitem"><a class="list__sublink" href="#e2">New Year</a></li>
+                        <li class="list__subitem"><a class="list__sublink" href="#e3">Wedding</a></li>
+                        <li class="list__subitem"><a class="list__sublink" href="#e4">Corporative</a></li>
+                    </ul>
+                </li><li class="list__item"><a class="list__link" href="#gallery">Gallery <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="nav__sublist">
+                        <li class="list__subitem"><a class="list__sublink" href="#nterior__photo">Interior</a></li>
+                        <li class="list__subitem"><a class="list__sublink" href="#dishes__photo">Dishes</a></li>
+                        <li class="list__subitem"><a class="list__sublink" href="#events__photo">Events</a></li>
+                    </ul>
+                </li><li class="list__item"><a class="list__link hidden" href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start slider -->
+    <section class="slider">
+        <ul class="slider__list">
+            <li class="slider__item">
+                <img src="img/img1.jpg" alt="Ukrainian borsch" title="Ukrainian borsch" class="slider__img">
+            </li>
+            <li class="slider__item">
+                <img src="img/img2.jpg" alt="Pickles" title="Pickles" class="slider__img">
+            </li>
+            <li class="slider__item">
+                <img src="img/img3.jpg" alt="Khachapuri in Adjarian" title="Khachapuri in Adjarian" class="slider__img">
+            </li>
+            <li class="slider__item">
+                <img src="img/img4.jpg" alt="Georgian dolma" title="Georgian dolma" class="slider__img">
+            </li>
+            <li class="slider__item">
+                <img src="img/img5.jpg" alt="Khinkali" title="Khinkali" class="slider__img">
+            </li>
+        </ul>
+    </section>
+    <!-- end slider -->
+
+    <!-- start about us -->
+    <section class="about wrapper" id="about">
+        <h2 class="section__title">About</h2>
+        <p class="about__text">Spacious and grandly, the restaurant, combining the two richest cuisine in the world - Ukrainian and Georgian BORSHCHAPURI - is located in the Mariinsky Park, next to the Water Museum. The name is familiar to everyone, BORSCH is the most famous hot dish in the whole world, and also - one of the business cards of Ukraine, and KHACHAPURI is a real pride of Georgia.
+            Borshchapuri - institution,<img src="img/hinkali.png" class="about__img right"> where Georgian culture intertwined with modern Ukrainian, traditional Georgian cuisine with modern trends, and all well-known Georgian and Ukrainian hospitality permeated into a single whole!
+            For each direction of the menu are specially invited masters from different regions of Ukraine and Georgia. The brazier menu is managed by a master from Kakheti, from where, incidentally, the legendary Georgian shashlyk comes from. The last one is of 7 kinds, and it is cooked on open fire. Another pride of the restaurant is 4 types of kebab lub: with lamb, turkey, pork, as well as with beef and suluguni. Khachapuri will be prepared for you by a master from Adjara, the best pupil of Gia Agirba - the most famous chef from Georgia, who also participated in the development of the menu. A cook from Svaneti is responsible for kubdari (a traditional dish of this region), chvishtari (corn cake from suluguni) and Svan salt. And the master from Imeretia will cook the kharcho. From the specialties here it is worth trying a chicken of tobacco with Adjika sauce and a branded platter of kebabs, quail and vegetables for a large company. Well, where without juicy khinkali, who run the risk of becoming the best in the city!
+            We cook borscht according to an ancient secret recipe, which is passed on from generation to generation, the descendant of which works in our restaurant!<img src="img/asorti-sala.png" class="about__img left"> Salo, from Transcarpathian regions and Carpathian tea , all this will not leave you indifferent.
+            Here you will find a huge collection of exclusively Georgian wines, as well as own wine. The restaurant, which combines the two richest cuisine of the world - Ukrainian and Georgian BORSHCHAPURI - is located in the Mariinsky Park, next to the Water Museum. The name is familiar to everyone, BORSCH is the most famous hot dish in the whole world, and also - one of the business cards of Ukraine, and KHACHAPURI is a real pride of Georgia.
+            <img src="img/vine.png" class="about__img right padding">Borshchapuri is an institution in which the Georgian culture intertwined with the modern Ukrainian style, traditional Georgian cuisine with modern trends, and all well-known Georgian and Ukrainian hospitality mixed into a single whole !!
+            For each direction of the menu are specially invited masters from different regions of Ukraine and Georgia. The brazier-menu is headed by a master from Kakheti, from where, incidentally, the legendary Georgian shish kebab comes. The latter is 7 species, and it is cooked on an open fire. Another pride of the restaurant is 4 types of kebab lub: with lamb, turkey, pork, as well as with beef and suluguni. Khachapuri will be prepared for you by a master from Adjara, the best pupil of Gia Agirba - the most famous chef from Georgia, who also participated in the development of the menu. A cook from Svaneti is responsible for kubdari (a traditional dish of this region), chvishtari (corn cake from suluguni) and Svan salt. And the master from Imeretia will cook the kharcho. From the specialties here it is worth trying a chicken of tobacco with Adjika sauce and a branded platter of kebabs, quail and vegetables for a large company. Well, where without juicy khinkali, who run the risk of becoming the best in the city!
+            Borsch we prepare according to an ancient secret recipe, which is passed from generation to generation, the descendant of which works in our restaurant! Salo, from Transcarpathian regions and Carpathian tea, all this will not leave you indifferent.
+        </p>
+    </section>
+    <!-- end about us -->
+    <!--start menu-->
+    <section class="menu wrapper" id="menu">
+        <h2 class="section__title">Menu</h2>
+        <div class="menu__ukrainian-cuisine">
+            <input type="checkbox" id="menu__ukrainian-cuisine--inpuut" name="ukrainian-cuisine" class="menu__type">
+            <label for="menu__ukrainian-cuisine--inpuut">
+                <img src="img/ukrainian-cuisine.png" alt="ukrainian-cuisine" class="menu__img">
+                <h3 class="menu__title">Ukrainian cuisine</h3>
+            </label>
+            <div class="menu__text">
+                <table class="menu__table">
+                    <tr>
+                        <th class="menu__group" colspan="2">Холодные закуски</th>
+                        <th class="menu__group" colspan="2">Первые блюда</th>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Украинский сет</td>
+                        <td class="menu__dish__price">290 грн.</td>
+                        <td class="menu__dish__title">Украинский борщ с пампушками, чесноком и салом</td>
+                        <td class="menu__dish__price">95 гнр.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Домашняя буженина и колбаса, кровянка, три вида сала, квашеная капуста, соленый огурец и помидорка, острый перец, чеснок</td>
+                        <td class="menu__dish__weight">580/250</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">330/80/35</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Сыры от украинских серверов</td>
+                        <td class="menu__dish__price">199 грн.</td>
+                        <td class="menu__dish__title">Карпатский бограч из трех видов мяса</td>
+                        <td class="menu__dish__price">172 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Закарпатская брынза, сыр из козьего, овечьего и коровьего молока</td>
+                        <td class="menu__dish__weight">210/75</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight"> 350/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Рулетики из баклажанов</td>
+                        <td class="menu__dish__price">89 грн.</td>
+                        <td class="menu__dish__title">Юшка из трех видов грибов</td>
+                        <td class="menu__dish__price">152 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">с начинкой из грецкого ореха и закарпатской творожной пастой</td>
+                        <td class="menu__dish__weight">185 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">340/35</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Стратегический запас Украины</td>
+                        <td class="menu__dish__price">69 грн.</td>
+                        <td class="menu__dish__title">Уха с Днепровского улова</td>
+                        <td class="menu__dish__price">164 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Генеральское сало, Сало в острой паприке, Сало горячего копчения на фруктовых веточках, Сало холодного копчения</td>
+                        <td class="menu__dish__weight">50 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">320/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Тарелка с соленьями</td>
+                        <td class="menu__dish__price">109 грн.</td>
+                        <td class="menu__dish__title">Борщ зеленый с домашней курицы и перепилиными яйцами</td>
+                        <td class="menu__dish__price">128 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">огурцы, помидоры, чеснок, квашеная капуста, перец острый</td>
+                        <td class="menu__dish__weight">380 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">330/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Холодец</td>
+                        <td class="menu__dish__price">81 грн.</td>
+                        <td class="menu__dish__title">Суп куриный с лапшой и овощами</td>
+                        <td class="menu__dish__price">99 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Свинина, лук репчатый, чеснок, желатин, перец душистый, лист лавровый</td>
+                        <td class="menu__dish__weight">150 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">300/30</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__group" colspan="2">Салаты</th>
+                        <th class="menu__group" colspan="2">Основные блюда</th>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Оливье с куриным филе</td>
+                        <td class="menu__dish__price">98 грн.</td>
+                        <td class="menu__dish__title">Традиционные драники со сметаной и овощным салатом</td>
+                        <td class="menu__dish__price">128 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Филе куриное, картофель отварной, яйца вкрутую, соленые огурцы, зеленый горошек(консервированный), майонез, укроп</td>
+                        <td class="menu__dish__weight">270 г</td>
+                        <td class="menu__dish__consist">салат(капуста, морковь, перец болгарский)</td>
+                        <td class="menu__dish__weight">250/100/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Сельдь под шубой</td>
+                        <td class="menu__dish__price">86 грн.</td>
+                        <td class="menu__dish__title">Котлета по-Киевски с картофельным пюре и офощным салатом</td>
+                        <td class="menu__dish__price">185 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Сельдь, картофель отварной, яйца вкрутую, свекла отварная, морковь отварная, лук, майонез</td>
+                        <td class="menu__dish__weight">290 г</td>
+                        <td class="menu__dish__consist">салат(капуста, помидор, огурец)</td>
+                        <td class="menu__dish__weight">150/150/100</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Салат с запеченным баклажаном и телятиной</td>
+                        <td class="menu__dish__price">149 грн.</td>
+                        <td class="menu__dish__title">Вареники со сметаной( картошка, капуста, грибы, мясо, творог, вишня)</td>
+                        <td class="menu__dish__price">120 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">томатами черри и соусом из орехов кешью</td>
+                        <td class="menu__dish__weight">200 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">250/40</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Салат "Tableичный"</td>
+                        <td class="menu__dish__price">95 грн.</td>
+                        <td class="menu__dish__title">Домашняя кровянка с чебрецом</td>
+                        <td class="menu__dish__price">150 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">буженина,картофель,морковь,горошок зеленый,огурец свежий,огурец соленый,яйцо куриное,майонез</td>
+                        <td class="menu__dish__weight">300 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">250/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Салат "Греческий" классический</td>
+                        <td class="menu__dish__price">110 грн.</td>
+                        <td class="menu__dish__title">Карп запеченный в сметане с овощами</td>
+                        <td class="menu__dish__price">140 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">свежие овощи с сыром "Фета" и оливковым маслом</td>
+                        <td class="menu__dish__weight">300 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">200/100</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__group" colspan="2">Десерты</th>
+                        <th class="menu__group" colspan="2">Напитки</th>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Фирменный "Киевский" торт</td>
+                        <td class="menu__dish__price">90 грн.</td>
+                        <td class="menu__dish__title">Карпатский травяной чай</td>
+                        <td class="menu__dish__price">50 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">150 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">500 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Львовский сырник с сезонными фруктами</td>
+                        <td class="menu__dish__price">105 грн.</td>
+                        <td class="menu__dish__title">Узвар</td>
+                        <td class="menu__dish__price">40 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">200/100</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">250 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Яблочный/вишневый штрудель с фисташковым мороженым</td>
+                        <td class="menu__dish__price">130 грн.</td>
+                        <td class="menu__dish__title">Львовский кофе с кокосовым ликером</td>
+                        <td class="menu__dish__price">50 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">200/70</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">100 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Медовик с домашней сметаной</td>
+                        <td class="menu__dish__price">110 грн.</td>
+                        <td class="menu__dish__title">Медовуха/хреновуха</td>
+                        <td class="menu__dish__price">50 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">150/30</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">50 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Фруктовый салат с йогуртом</td>
+                        <td class="menu__dish__price">110 грн.</td>
+                        <td class="menu__dish__title">Настойки (лимонная, вишневая, грушовая, чайная роза, клюква)</td>
+                        <td class="menu__dish__price">40 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Банан, яблоко, фпельсин, клубника</td>
+                        <td class="menu__dish__weight">300 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">50 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title"></td>
+                        <td class="menu__dish__price"></td>
+                        <td class="menu__dish__title">Горилка украинская</td>
+                        <td class="menu__dish__price">30 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight"></td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">50 мл.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="menu__georgian-cuisine">
+            <input type="checkbox" id="menu__georgian-cuisine--inpuut" name="georgian-cuisine"  class="menu__type">
+            <label for="menu__georgian-cuisine--inpuut">
+                <img src="img/georgian-cuisine.png" alt="georgian-cuisine" class="menu__img">
+                <h3 class="menu__title">Georgian cuisine</h3>
+            </label>
+            <div class="menu__text">
+                <table class="menu__table">
+                    <tr>
+                        <th class="menu__group" colspan="2">Холодные закуски</th>
+                        <th class="menu__group" colspan="2">Первые блюда</th>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Украинский сет</td>
+                        <td class="menu__dish__price">290 грн.</td>
+                        <td class="menu__dish__title">Украинский борщ с пампушками, чесноком и салом</td>
+                        <td class="menu__dish__price">95 гнр.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Домашняя буженина и колбаса, кровянка, три вида сала, квашеная капуста, соленый огурец и помидорка, острый перец, чеснок</td>
+                        <td class="menu__dish__weight">580/250</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">330/80/35</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Сыры от украинских серверов</td>
+                        <td class="menu__dish__price">199 грн.</td>
+                        <td class="menu__dish__title">Карпатский бограч из трех видов мяса</td>
+                        <td class="menu__dish__price">172 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Закарпатская брынза, сыр из козьего, овечьего и коровьего молока</td>
+                        <td class="menu__dish__weight">210/75</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight"> 350/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Рулетики из баклажанов</td>
+                        <td class="menu__dish__price">89 грн.</td>
+                        <td class="menu__dish__title">Юшка из трех видов грибов</td>
+                        <td class="menu__dish__price">152 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">с начинкой из грецкого ореха и закарпатской творожной пастой</td>
+                        <td class="menu__dish__weight">185 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">340/35</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Стратегический запас Украины</td>
+                        <td class="menu__dish__price">69 грн.</td>
+                        <td class="menu__dish__title">Уха с Днепровского улова</td>
+                        <td class="menu__dish__price">164 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Генеральское сало, Сало в острой паприке, Сало горячего копчения на фруктовых веточках, Сало холодного копчения</td>
+                        <td class="menu__dish__weight">50 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">320/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Тарелка с соленьями</td>
+                        <td class="menu__dish__price">109 грн.</td>
+                        <td class="menu__dish__title">Борщ зеленый с домашней курицы и перепилиными яйцами</td>
+                        <td class="menu__dish__price">128 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">огурцы, помидоры, чеснок, квашеная капуста, перец острый</td>
+                        <td class="menu__dish__weight">380 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">330/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Холодец</td>
+                        <td class="menu__dish__price">81 грн.</td>
+                        <td class="menu__dish__title">Суп куриный с лапшой и овощами</td>
+                        <td class="menu__dish__price">99 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Свинина, лук репчатый, чеснок, желатин, перец душистый, лист лавровый</td>
+                        <td class="menu__dish__weight">150 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">300/30</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__group" colspan="2">Салаты</th>
+                        <th class="menu__group" colspan="2">Основные блюда</th>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Оливье с куриным филе</td>
+                        <td class="menu__dish__price">98 грн.</td>
+                        <td class="menu__dish__title">Традиционные драники со сметаной и овощным салатом</td>
+                        <td class="menu__dish__price">128 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Филе куриное, картофель отварной, яйца вкрутую, соленые огурцы, зеленый горошек(консервированный), майонез, укроп</td>
+                        <td class="menu__dish__weight">270 г</td>
+                        <td class="menu__dish__consist">салат(капуста, морковь, перец болгарский)</td>
+                        <td class="menu__dish__weight">250/100/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Сельдь под шубой</td>
+                        <td class="menu__dish__price">86 грн.</td>
+                        <td class="menu__dish__title">Котлета по-Киевски с картофельным пюре и офощным салатом</td>
+                        <td class="menu__dish__price">185 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Сельдь, картофель отварной, яйца вкрутую, свекла отварная, морковь отварная, лук, майонез</td>
+                        <td class="menu__dish__weight">290 г</td>
+                        <td class="menu__dish__consist">салат(капуста, помидор, огурец)</td>
+                        <td class="menu__dish__weight">150/150/100</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Салат с запеченным баклажаном и телятиной</td>
+                        <td class="menu__dish__price">149 грн.</td>
+                        <td class="menu__dish__title">Вареники со сметаной( картошка, капуста, грибы, мясо, творог, вишня)</td>
+                        <td class="menu__dish__price">120 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">томатами черри и соусом из орехов кешью</td>
+                        <td class="menu__dish__weight">200 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">250/40</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Салат "Tableичный"</td>
+                        <td class="menu__dish__price">95 грн.</td>
+                        <td class="menu__dish__title">Домашняя кровянка с чебрецом</td>
+                        <td class="menu__dish__price">150 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">буженина,картофель,морковь,горошок зеленый,огурец свежий,огурец соленый,яйцо куриное,майонез</td>
+                        <td class="menu__dish__weight">300 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">250/30</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Салат "Греческий" классический</td>
+                        <td class="menu__dish__price">110 грн.</td>
+                        <td class="menu__dish__title">Карп запеченный в сметане с овощами</td>
+                        <td class="menu__dish__price">140 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">свежие овощи с сыром "Фета" и оливковым маслом</td>
+                        <td class="menu__dish__weight">300 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">200/100</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__group" colspan="2">Десерты</th>
+                        <th class="menu__group" colspan="2">Напитки</th>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Фирменный "Киевский" торт</td>
+                        <td class="menu__dish__price">90 грн.</td>
+                        <td class="menu__dish__title">Карпатский травяной чай</td>
+                        <td class="menu__dish__price">50 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">150 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">500 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Львовский сырник с сезонными фруктами</td>
+                        <td class="menu__dish__price">105 грн.</td>
+                        <td class="menu__dish__title">Узвар</td>
+                        <td class="menu__dish__price">40 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">200/100</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">250 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Яблочный/вишневый штрудель с фисташковым мороженым</td>
+                        <td class="menu__dish__price">130 грн.</td>
+                        <td class="menu__dish__title">Львовский кофе с кокосовым ликером</td>
+                        <td class="menu__dish__price">50 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">200/70</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">100 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Медовик с домашней сметаной</td>
+                        <td class="menu__dish__price">110 грн.</td>
+                        <td class="menu__dish__title">Медовуха/хреновуха</td>
+                        <td class="menu__dish__price">50 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">150/30</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">50 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title">Фруктовый салат с йогуртом</td>
+                        <td class="menu__dish__price">110 грн.</td>
+                        <td class="menu__dish__title">Настойки (лимонная, вишневая, грушовая, чайная роза, клюква)</td>
+                        <td class="menu__dish__price">40 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist">Банан, яблоко, фпельсин, клубника</td>
+                        <td class="menu__dish__weight">300 г</td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">50 мл.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__title"></td>
+                        <td class="menu__dish__price"></td>
+                        <td class="menu__dish__title">Горилка украинская</td>
+                        <td class="menu__dish__price">30 грн.</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight"></td>
+                        <td class="menu__dish__consist"></td>
+                        <td class="menu__dish__weight">50 мл.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!--end menu-->
+
+    <!--start events-->
+    <section id="events" class="events wrapper">
+        <h2 class="section__title">Events</h2>
+        <div class="event__box" id="e1">
+            <input type="checkbox" name="event" class="events__input" id="events__input--1" checked="checked">
+            <label class="events__label" for="events__input--1">B-Day</label>
+            <p class="events__text">Where to celebrate the birthday in Kiev, which restaurant to choose - such a lot of birthday parties. After all, it would be desirable that the institution liked everything - and the culprit celebrations, and guests. To be delicious, cozy, sincere and festive. That birthday, the same one that once a year, became the most memorable holiday, and emotions from him warmed your heart for the next 365 days. We invite you to the BORSHCHAPURI restaurant in Kiev, which is perfect for celebrating your birthday.</p>
+            <p class="events__text">We have a wonderful location (only 2 minutes from the city of Olympiyskaya). In a two-story building with panoramic windows you can choose a hall that will be as comfortable as possible for you and all the guests. Are you planning a little celebration in the nearest circle? Then the ideal option will be our small banquet hall, where you can accommodate up to 35 guests. Want to have a great party? We will offer you our main hall, which accommodates up to 100 people. If your plans include lunch or dinner with a few friends, we are happy to arrange a table for you, according to the number of guests in the main hall or on the summer terraces.</p>
+            <p class="events__text">One of the main criteria for choosing a restaurant to celebrate a birthday in Kiev is the menu. We will ensure that you and your guests get genuine gastronomic pleasure. At your disposal - the main and banquet menu, where you can choose the most popular dishes of different cuisines of the world. The cost of a banquet - from 750 UAH per person.</p>
+            <p class="events__text">Any holiday is not only a delicious meal, but also entertainment. To make the event brilliant and fun, we offer services for the animator or the host. And on the summer terraces you can arrange creative photoshows: to display the brightest shots of the birthday.</p>
+            <p class="events__text">Additional Services:</p>
+            <ol class="events__text event__ul">
+                <li>Children's menu</li>
+                <li>Playground</li>
+                <li>Projector, screen, plasma</li>
+                <li>Individual menu preparation</li>
+                <li>Birthdays discounts</li>
+            </ol>
+            <p class="events__text">Birthday is first of all gifts! SMORODINA loves its guests and gives birth to each other a 30% discount. You can use it for 7 days before and after your birthday. It is enough to provide a passport or a copy of it, and our administrators will make you all. Agree, a birthday discount - a big plus when choosing a restaurant!</p>
+        </div>
+        <div class="event__box" id="e2">
+            <input type="checkbox" name="event" class="events__input" id="events__input--2">
+            <label for="events__input--2">New Year</label>
+            <p class="events__text">We all believe from childhood that New Year's Eve is a special night. This is the time when desires and dreams come true, and everything that seems impossible is easy to justify.</p>
+            <p class="events__text">In our BORSCHAPURI restaurant, the New Year's atmosphere is particularly acute. She is in white shining snow, blindfolds, in clean, frosty air, in fir trees, sprinkled with white powder, in the sky, covered with stars, shining brighter, and in the silence of a high mountain night.</p>
+            <p class="events__text">The new year in BORSHCHAPURI is a modern, cozy atmosphere, an exquisite range of guests and dishes that can satisfy the tastes of the most sophisticated gourmets.</p>
+            <p class="events__text">Exotic snacks, delicious selection dishes, excellent desserts and elite alcoholic beverages will satisfy the gastronomic tastes of our guests.</p>
+            <p class="events__text">A merry New Year will be provided by actress Yulia Slobodyan, show-ballet "Madrin", animators and DJs.</p>
+            <p class="events__text">In the evening program, the animation artist with light waves will turn the light into living energy and embody different stories. The conductor of a unique solemn evening is Oles Zinkiv, who will be helped by Santa Claus and Snow Maiden.</p>
+        </div>
+        <div class="event__box" id="e3">
+            <input type="checkbox" name="event" class="events__input" id="events__input--3">
+            <label for="events__input--3">Wedding</label>
+            <p class="events__text">The proposal is made, the wedding ring shines on your finger and you are already - the groom and the bride! Time to schedule a wedding! One of the main points in the wedding training is the choice of venue for the celebration. "Where to find the perfect restaurant for a wedding in Kiev?" - these are the thoughts asked by young people who want to make the institution as closely as possible their tastes and budget. We know the answer to this is the main wedding issue - and we will be glad to see you at the restaurant BORSHCHAPURI!</p>
+            <p class="events__text">Traditionally, for newlyweds, when choosing a wedding restaurant, an important location (everyone wants to get to the facility conveniently). Near the restaurant is a large green area, ideal for a wedding in the capital. After all, on a green lawn you can spend a beautiful outing ceremony - we are happy to help you in organizational matters! And after the ceremony, while guests will enjoy a buffet, the bride and groom can hold a wedding photo shoot.</p>
+            <p class="events__text">In BORSHCHAPURI we offer you two cozy and incredibly comfortable halls: in a small room up to 35 guests, mostly - up to 100. Our interior loves photographers - during the wedding in the restaurant get great pictures. Light and stylish halls with high ceilings and panoramic windows are ideal for wedding photos!</p>
+        </div>
+        <div class="event__box" id="e4">
+            <input type="checkbox" name="event" class="events__input" id="events__input--4">
+            <label for="events__input--4">Corporative</label>
+            <p class="events__text">It is no secret that teambuildings and corporate events unite the team, promote team spirit, improve work results, motivate employees to achieve new professional heights. To organize a corporation, companies are looking for a facility that would be as comfortable as possible for all employees. The BORSHCHAPURI restaurant often hosts corporate events on a variety of occasions: the New Year, the birthday of a company, a victory in a tender, an informal gathering, a presentation, a conference, a seminar. Our rooms are ready to accept teams up to 100 people.</p>
+            <p class="events__text">Depending on the theme of the event, the number of guests, the wishes of the company, we offer you a large and small hall, summer terraces. Beautiful interiors with lots of greenery (green - the most popular corporate color), panoramic windows overlooking the Olympia Stadium, excellent service, a varied menu and an individual approach to each company make our establishment one of the best restaurants in Kiev for corporate events.</p>
+            <p class="events__text">For corporate events, we offer an ordinary and banquet menu, which is represented by various dishes of popular cuisines of the world. The cost is from 750 UAH per person. Of course, the event may be non-alcoholic - we have enough drinks for such a format: morsa, freesia, compotes of own production. If the company decided to add alcohol to the menu, then we are ready to offer a fine wine list with the best drinks from Georgia.</p>
+            <p class="events__text">One of the important points when choosing a restaurant for corporate events is the ability of the institution to provide additional opportunities that are needed, for example, for a scenario plan. So, we have a plasma and a projector, which can show the company's history, results of work, plans for the future. And on the summer terraces you can place corporate photoshoot and banners with logos.</p>
+            <p class="events__text">Of course, our institution always uses an individual approach to each company and we are ready to discuss all the wishes so that the event was held at the highest level!</p>
+        </div>
+    </section>
+    <!--end events-->
+
+    <!--start gallery-->
+    <section id="gallery" class="gallery wrapper">
+        <h2 class="section__title">Gallery</h2>
+        <ul class="gallery__list">
+            <li id="nterior__photo"><a href="img/image01En.jpg"><img src="img/image01En.jpg" alt=""></a></li>
+            <li><a href="img/image02.jpg"><img src="img/image02.jpg" alt=""></a></li>
+            <li><a href="img/image03.jpg"><img src="img/image03.jpg" alt=""></a></li>
+            <li><a href="img/image04.jpg"><img src="img/image04.jpg" alt=""></a></li>
+            <li><a href="img/image05.jpg"><img src="img/image05.jpg" alt=""></a></li>
+            <li><a href="img/image06.jpg"><img src="img/image06.jpg" alt=""></a></li>
+            <li><a href="img/image07.jpg"><img src="img/image07.jpg" alt=""></a></li>
+            <li><a href="img/image08.jpg"><img src="img/image08.jpg" alt=""></a></li>
+            <li><a href="img/image09.jpg"><img src="img/image09.jpg" alt=""></a></li>
+            <li><a href="img/image10.jpg"><img src="img/image10.jpg" alt=""></a></li>
+            <li id="dishes__photo"><a href="img/image11En.jpg"><img src="img/image11En.jpg" alt=""></a></li>
+            <li><a href="img/image12.jpg"><img src="img/image12.jpg" alt=""></a></li>
+            <li><a href="img/image13.jpg"><img src="img/image13.jpg" alt=""></a></li>
+            <li><a href="img/image14.jpg"><img src="img/image14.jpg" alt=""></a></li>
+            <li><a href="img/image15.jpg"><img src="img/image15.jpg" alt=""></a></li>
+            <li><a href="img/image16.jpg"><img src="img/image16.jpg" alt=""></a></li>
+            <li><a href="img/image17.jpg"><img src="img/image17.jpg" alt=""></a></li>
+            <li><a href="img/image18.jpg"><img src="img/image18.jpg" alt=""></a></li>
+            <li><a href="img/image19.jpg"><img src="img/image19.jpg" alt=""></a></li>
+            <li><a href="img/image20.jpg"><img src="img/image20.jpg" alt=""></a></li>
+            <li><a href="img/image21.jpg"><img src="img/image21.jpg" alt=""></a></li>
+            <li id="events__photo"><a href="img/image22En.jpg"><img src="img/image22En.jpg" alt=""></a></li>
+            <li><a href="img/image23.jpg"><img src="img/image23.jpg" alt=""></a></li>
+            <li><a href="img/image24.jpg"><img src="img/image24.jpg" alt=""></a></li>
+            <li><a href="img/image25.jpg"><img src="img/image25.jpg" alt=""></a></li>
+            <li><a href="img/image26.jpg"><img src="img/image26.jpg" alt=""></a></li>
+            <li><a href="img/image27.jpg"><img src="img/image27.jpg" alt=""></a></li>
+            <li><a href="img/image28.jpg"><img src="img/image28.jpg" alt=""></a></li>
+            <li><a href="img/image29.jpg"><img src="img/image29.jpg" alt=""></a></li>
+            <li><a href="img/image30.jpg"><img src="img/image30.jpg" alt=""></a></li>
+        </ul>
+        <div class="gallery__lightbox">
+            <div class="gallery__overlay"></div>
+            <figure class="gallery__modal">
+                <img src="#">
+                <span class="prev">← prev</span>
+                <span class="next">next →</span>
+            </figure>
+        </div>
+    </section>
+    <!--end gallery-->
+
+    <!--start contact-->
+    <section class="contact wrapper" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__box">
+            <p class="contact__title">Working hours:</p>
+            <p class="contact__text">Monday - Sunday:</p>
+            <p class="contact__text"> 12:00 – Until the last guest</p>
+        </div>
+        <div class="contact__box">
+            <p class="contact__title">Phones</p>
+            <ul>
+                <li><a href="tel:093 456 56 56" class="tel lifecell contact__text">093 456 56 56</a></li>
+                <li><a href="tel:095 355 65 65" class="tel vodafone contact__text">095 355 65 65</a></li>
+                <li><a href="tel:098 956 56 56" class="tel kyivstar contact__text">098 956 56 56</a></li>
+            </ul>
+        </div>
+        <div class="contact__box">
+            <p class="contact__title">Address:</p>
+            <p class="contact__text">Ukraine, Kiev</p>
+            <p class="contact__text">ul. Bolshaya Vasilkovskaya 72</p>
+            <p class="contact__text">Business Center Olympic</p>
+        </div>
+        <div class="contact__map">
+            <img src="img/map.png" alt="Карта" title="Click to view the map">
+        </div>
+        <div class="contact__modal">
+            <span class="modal__close"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d549.9326101038089!2d30.515619922473192!3d50.432448812833876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cee2ba455555%3A0xa9428da0b5492490!2z0J7Qu9C40LzQv9C40LnRgdC60LjQuQ!5e0!3m2!1sru!2sua!4v1513697325310" width="800" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="modal__overlay"></div>
+    </section>
+    <!--end contact-->
+
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="footer__logo">
+            <a href="indexEn.html"><img src="img/footer__logo.png" alt="Logo"></a>
+        </div>
+        <div class="footer__copyright">
+            <span class="copyright">&copy; 2018 All rights reserved</span>
+        </div>
+        <div class="footer__social">
+            <ul class="footer__social__list">
+                <li class="footer__social-facebook footer__social__item">
+                    <a href="" class="fa fa-facebook-official social__icon" onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')"></a>
+                </li>
+                <li class="footer__social-instagram footer__social__item">
+                    <a href="" class="fa fa-instagram social__icon"  onclick="Share.instagram('URL','TITLE')"></a>
+                </li>
+                <li class="footer__social-twitter footer__social__item">
+                    <a href="" class="fa fa-twitter social__icon" onclick="Share.twitter('URL','TITLE')"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script type="text/javascript" src="js/script$.js"></script>
+    <script src="js/function.js"></script>
+</body>
+</html>
